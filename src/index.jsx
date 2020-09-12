@@ -24,4 +24,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App name="neil" />, document.getElementById('app'));
+ReactDOM.render(<App name="react" />, document.getElementById('root'));
