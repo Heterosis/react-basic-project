@@ -20,12 +20,6 @@ module.exports = {
               fix: true,
             },
           },
-          {
-            loader: 'prettier-loader',
-            options: {
-              parser: 'babel',
-            },
-          },
         ],
       },
       {
