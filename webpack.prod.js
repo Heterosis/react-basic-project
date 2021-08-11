@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 const { merge } = require('webpack-merge');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const common = require('./webpack.common.js');
+const common = require('./webpack.common');
 
 module.exports = merge(common, {
   mode: 'production',
@@ -19,7 +19,7 @@ module.exports = merge(common, {
           },
         }).apply(compiler);
       },
+      new CssMinimizerPlugin(),
     ],
   },
-  plugins: [new OptimizeCssAssetsPlugin()],
 });

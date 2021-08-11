@@ -22,5 +22,12 @@
     "react/prop-types": [
       0
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.common.js"
+      }
+    }
   }
 }
