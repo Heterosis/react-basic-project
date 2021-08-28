@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'css/index.css';
+import './fontawesome';
+import './i18n';
+
 import App from 'compoents/App';
+import Loading from 'compoents/Loading';
 
-library.add(fab, fas, far);
-
-ReactDOM.render(<App name="react" />, document.getElementById('app'));
+ReactDOM.render(
+  <Suspense fallback={<Loading />}>
+    <App name="react" />
+  </Suspense>,
+  document.getElementById('app'),
+);
