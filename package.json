@@ -58,8 +58,8 @@
         "lodash": "^4.17.21",
         "object-hash": "^2.2.0",
         "react": "^16.14.0",
-        "react-bootstrap": "^1.6.1",
         "react-dom": "^16.14.0",
-        "react-i18next": "^11.11.4"
+        "react-i18next": "^11.11.4",
+        "reactstrap": "^8.10.0"
     }
 }

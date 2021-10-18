@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button } from 'reactstrap';
 import { useTranslation } from 'react-i18next';
 
 const LangBtn = () => {
@@ -18,7 +18,7 @@ const LangBtn = () => {
   };
 
   return (
-    <Button variant="primary" onClick={handleChangeLang}>
+    <Button color="primary" onClick={handleChangeLang}>
       {t('langNow')}
     </Button>
   );
